@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="im_tab_height">36dp</dimen>
+    <dimen name="profile_avatar_size">60dp</dimen>
+</resources>

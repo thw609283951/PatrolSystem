@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CommonFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xh"
+            android:layout_marginRight="@dimen/spacing_h"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/spacing_m"
+            android:background="@drawable/bg_shape_white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_gps"
+                style="@style/CommonSmallText"
+                android:text="@string/marker_list"/>
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_project_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/project_location"
+                android:textSize="@dimen/text_size_m"
+                android:textColor="@color/colorAccent" />
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_danger_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/danger_location"
+                android:textSize="@dimen/text_size_m"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:src="@mipmap/ic_again_location" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_l"
+        android:stretchColumns="0,1,2"
+        android:background="@drawable/bg_bule_shape"
+        style="@style/TableVerticalDivider">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/spacing_l"
+            android:paddingBottom="@dimen/spacing_l"
+            style="@style/TableHorizontallDivider">
+
+            <TextView
+                android:id="@+id/btn_event_up"
+                style="@style/PatrolTableItem"
+                android:drawableTop="@mipmap/ic_event_up"
+                android:text="@string/event_up" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/btn_wait_up_record"
+                    style="@style/PatrolTableItem"
+                    android:drawableTop="@mipmap/ic_wait_up_record"
+                    android:text="@string/wait_up_record" />
+                <TextView
+                    android:id="@+id/tv_wait_up_count"
+                    style="@style/UnReadCountText"
+                    android:layout_marginRight="@dimen/spacing_h"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/btn_history_record"
+                style="@style/PatrolTableItem"
+                android:drawableTop="@mipmap/ic_history_record"
+                android:text="@string/history_record" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- 日常工作页 -->
+    <dimen name="app_img_size">50dp</dimen>
+    <dimen name="log">50dp</dimen>
+
+    <dimen name="weather_icon_size">60dp</dimen>
+    <dimen name="weather_icon_size_m">55dp</dimen>
+</resources>

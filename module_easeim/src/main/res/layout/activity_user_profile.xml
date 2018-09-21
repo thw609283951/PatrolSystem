@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.supersit.common.widget.MyLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    style="@style/CommonActivity">
+
+    <include layout="@layout/view_include_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_m"
+                style="@style/CommonPadding_tbm_lrh"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.hyphenate.easeui.widget.EaseImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="@dimen/profile_avatar_size"
+                        android:layout_height="@dimen/profile_avatar_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/spacing_m"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_default_avatar" />
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_avatar"
+                        android:layout_alignTop="@id/iv_avatar"
+                        style="@style/CommonText"/>
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_avatar"
+                        android:layout_below="@id/tv_nickname"
+                        android:layout_marginTop="@dimen/spacing_m"
+                        style="@style/CommonLightText"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_m"
+                style="@style/CommonPadding_tbm_lrh">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonPadding_tbm_lrh">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone_number"
+                            style="@style/CommonLightText"/>
+                        <TextView
+                            android:id="@+id/tv_phone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            style="@style/CommonText"
+                            android:autoLink="all"/>
+                    </RelativeLayout>
+                    <View style="@style/CommonLine" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonPadding_tbm_lrh">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/positions"
+                            style="@style/CommonLightText"/>
+                        <TextView
+                            android:id="@+id/tv_positions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="安全员"
+                            style="@style/CommonText"/>
+                    </RelativeLayout>
+                    <View style="@style/CommonLine" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonPadding_tbm_lrh">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dept"
+                            style="@style/CommonLightText"/>
+                        <TextView
+                            android:id="@+id/tv_dept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            style="@style/CommonText"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_send_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_h"
+                style="@style/CommonButton"
+                android:text="@string/send_msg" />
+        </LinearLayout>
+    </ScrollView>
+</com.supersit.common.widget.MyLinearLayout>

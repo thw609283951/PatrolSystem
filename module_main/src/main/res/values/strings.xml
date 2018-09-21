@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">main</string>
+
+
+    <string name="instant_messaging">即时通讯</string>
+    <string name="patrol_inspection">巡查巡检</string>
+    <string name="routine_work">日常工作</string>
+    <string name="statistic_analysis">统计分析</string>
+    <string name="personnel_loction">人员位置</string>
+    <string name="my_info">我的</string>
+
+    <!-- 登录页 -->
+    <string name="login">登录</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="user_name_cannot_be_empty">用户名不能为空！</string>
+    <string name="password_cannot_be_empty">密码不能为空！</string>
+    <string name="Is_landing">正在登录……</string>
+    <string name="Is_change_password">正在修改密码……</string>
+
+    <!-- 设置页面 -->
+    <string name="message_setting">消息设置</string>
+    <string name="other_setting">其他设置</string>
+    <string name="share_apk">二维码分享</string>
+    <string name="change_password">修改密码</string>
+    <string name="about">关于</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="clear_over">清理完毕~~</string>
+    <string name="logout">退出登录</string>
+    <string name="scan_code_download">扫码下载</string>
+
+    <string name="Are_logged_out">正在退出登录..</string>
+
+    <string name="enter_old_password">请输入您的旧密码</string>
+    <string name="enter_new_password">请输入您的新密码</string>
+    <string name="enter_password_again">请再次输入</string>
+    <string name="confirm">确认</string>
+    <string name="new_password_cannot_be_empty">新密码不能为空!!</string>
+    <string name="old_password_cannot_be_empty">旧密码不能为空!!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

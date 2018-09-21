@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PatrolSystemAS.iml" filepath="$PROJECT_DIR$/PatrolSystemAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_common/lib_common.iml" filepath="$PROJECT_DIR$/lib_common/lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_easeui/lib_easeui.iml" filepath="$PROJECT_DIR$/lib_easeui/lib_easeui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_mvp/lib_mvp.iml" filepath="$PROJECT_DIR$/lib_mvp/lib_mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_app/module_app.iml" filepath="$PROJECT_DIR$/module_app/module_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_easeim/module_easeim.iml" filepath="$PROJECT_DIR$/module_easeim/module_easeim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_main/module_main.iml" filepath="$PROJECT_DIR$/module_main/module_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_patrol/module_patrol.iml" filepath="$PROJECT_DIR$/module_patrol/module_patrol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_work/module_work.iml" filepath="$PROJECT_DIR$/module_work/module_work.iml" />
+    </modules>
+  </component>
+</project>

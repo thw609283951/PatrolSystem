@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">work</string>
+    <string name="area_guangzhou">广州</string>
+    <string name="weather_up_time">更新时间：%1$s（实时气温 %2$s °C）</string>
+    <string name="temperature" formatted="false">%1$s ~ %2$s</string>
+    <string name="event_handle">&#160;&#160;事项处理</string>
+    <string name="wait_accept">待受理</string>
+    <string name="processing">处理中</string>
+    <string name="processed">已办结</string>
+    <string name="submited">我提交</string>
+
+    <string name="applications">&#160;&#160;我的应用</string>
+    <string name="notification">通知公告</string>
+    <string name="notification_list">公告列表</string>
+    <string name="project_list">工程列表</string>
+    <string name="weather_forecast">天气预报</string>
+
+    <string name="patrol_dynamic">&#160;&#160;巡查动态</string>
+
+    <!-- 事件详情页 -->
+    <string name="event_notify">事件通知</string>
+    <string name="see_details">查看详情</string>
+
+    <string name="urgent_event_notify">紧急事件通知</string>
+    <string name="urgent_event_notifys"> 您收到了 %1$d 条紧急待处理事件,点击查看详情~~</string>
+
+    <string name="event_title">巡查内容</string>
+    <string name="event_remark">巡查情况记录</string>
+    <string name="event_info">事件信息</string>
+    <string name="event_source">事件来源</string>
+    <string name="upload_user">上报人:</string>
+    <string name="upload_time">上报时间:</string>
+    <string name="time">时间:</string>
+    <string name="upload_address">上报地址:</string>
+    <string name="affiliation_project">所属工程:</string>
+
+    <string name="scene_pictures">现场图片</string>
+    <string name="handle_situation">处理情况</string>
+
+    <string name="handle">操作:</string>
+    <string name="upload">上报</string>
+    <string name="accept">受理</string>
+    <string name="handle_person">经办人:</string>
+    <string name="handle_suggest">处理建议:</string>
+    <string name="next_receiver">下个受理人:</string>
+
+    <string name="end_person">办结人:</string>
+    <string name="end">办结</string>
+    <string name="send">发送</string>
+    <string name="edit_suggest">填写处理建议</string>
+    <string name="select_next_receiver">选择下一个受理人</string>
+
+</resources>

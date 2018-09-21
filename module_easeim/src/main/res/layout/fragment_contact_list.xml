@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackg"
+    android:orientation="vertical">
+    <include layout="@layout/view_search_bar" />
+
+    <com.supersit.common.widget.sidelist.SideListView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ctsListInitialLetterBg="#abc"/>
+
+</LinearLayout>
+
+

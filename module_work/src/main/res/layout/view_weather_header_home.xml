@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/fitsystem"
+    android:background="@drawable/bg_weather">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_padding_top"
+        android:padding="@dimen/spacing_m"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_today_weater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/weather_up_time"
+                style="@style/WhiteText"/>
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_white_loction"
+                android:text="@string/area_guangzhou"
+                style="@style/WhiteText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--天气现象图标-->
+                <ImageView
+                    android:id="@+id/iv_today_weater_icon"
+                    android:layout_width="@dimen/weather_icon_size"
+                    android:layout_height="@dimen/weather_icon_size"
+                    android:src="@mipmap/w0" />
+                <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="13~22°C"
+                    style="@style/WhiteText" />
+                <!--天气现象文字描述-->
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="晴"
+                    style="@style/WhiteText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/greyLight" />
+
+            <LinearLayout
+                android:id="@+id/ll_secondday_weater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <!--天气现象温度-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="明天"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象图标-->
+                <ImageView
+                    android:id="@+id/iv_secondday_weater_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/w2" />
+                <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_secondday_weater_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="13~22°C"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象文字描述-->
+                <TextView
+                    android:id="@+id/tv_secondday_weater_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="晴"
+                    style="@style/WhiteSmallText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/greyLight" />
+
+            <LinearLayout
+                android:id="@+id/ll_thirdday_weater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_thirdday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="周五"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象图标-->
+                <ImageView
+                    android:id="@+id/iv_thirdday_weater_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/w2" />
+                <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_thirdday_weater_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="13~22°C"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象文字描述-->
+                <TextView
+                    android:id="@+id/tv_thirdday_weater_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="晴"
+                    style="@style/WhiteSmallText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/greyLight" />
+
+            <LinearLayout
+                android:id="@+id/ll_fourthday_weater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">  <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_fourthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="周五"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象图标-->
+                <ImageView
+                    android:id="@+id/iv_fourthday_weater_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/w2" />
+                <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_fourthday_weater_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="13~22°C"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象文字描述-->
+                <TextView
+                    android:id="@+id/tv_fourthday_weater_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="晴"
+                    style="@style/WhiteSmallText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/greyLight" />
+
+            <LinearLayout
+                android:id="@+id/ll_fifthday_weater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">  <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_fifthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="周五"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象图标-->
+                <ImageView
+                    android:id="@+id/iv_fifthday_weater_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/w2" />
+                <!--天气现象温度-->
+                <TextView
+                    android:id="@+id/tv_fifthday_weater_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="13~22°C"
+                    style="@style/WhiteSmallText" />
+                <!--天气现象文字描述-->
+                <TextView
+                    android:id="@+id/tv_fifthday_weater_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="晴"
+                    style="@style/WhiteSmallText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_weather_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#70000000"
+        android:padding="@dimen/spacing_h"
+        android:layout_gravity="bottom"
+        style="@style/WhiteText"
+        android:visibility="invisible"
+        android:text="天气信息已过期，请点击刷新~~"/>
+</FrameLayout>
+

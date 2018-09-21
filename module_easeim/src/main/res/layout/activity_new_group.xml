@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.supersit.common.widget.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    style="@style/CommonActivity">
+
+    <include layout="@layout/view_include_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CommonPadding_tbm_lrh"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_h"
+            style="@style/CommonText"
+            android:text="@string/group_name"/>
+        <EditText
+            android:id="@+id/et_group_name"
+            android:layout_marginTop="@dimen/spacing_l"
+            style="@style/CommonEditText"
+            android:hint="@string/please_input"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            style="@style/CommonText"
+            android:text="@string/Group_chat_profile"/>
+        <EditText
+            android:id="@+id/et_group_remark"
+            android:layout_marginTop="@dimen/spacing_l"
+            style="@style/CommonEditText"
+            android:hint="@string/please_input"
+            android:lines="3"
+            android:lineSpacingMultiplier="1.1"
+            android:gravity="left|top"
+            android:padding="@dimen/spacing_m"/>
+    </LinearLayout>
+
+
+
+</com.supersit.common.widget.MyLinearLayout>

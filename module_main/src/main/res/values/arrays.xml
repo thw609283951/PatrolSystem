@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_main_titles">
+        <item>@string/instant_messaging</item>
+        <item>@string/patrol_inspection</item>
+        <item>@string/routine_work</item>
+        <item>@string/statistic_analysis</item>
+        <item>@string/my_info</item>
+    </string-array>
+
+    <integer-array name="tab_main_icons_pressed">
+        <item>@mipmap/ic_instant_messaging_select</item>
+        <item>@mipmap/ic_patrol_inspection_select</item>
+        <item>@mipmap/ic_routine_work_select</item>
+        <item>@mipmap/ic_statistic_analysis_select</item>
+        <item>@mipmap/ic_my_info_select</item>
+    </integer-array>
+
+    <integer-array name="tab_main_icons_normal">
+        <item>@mipmap/ic_instant_messaging_unselect</item>
+        <item>@mipmap/ic_patrol_inspection_unselect</item>
+        <item>@mipmap/ic_routine_work_unselect</item>
+        <item>@mipmap/ic_statistic_analysis_unselect</item>
+        <item>@mipmap/ic_my_info_unselect</item>
+    </integer-array>
+
+</resources>

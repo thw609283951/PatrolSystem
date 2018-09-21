@@ -1,0 +1,153 @@
+/**
+ * Shared file between builds so that they can all use the same dependencies and
+ * maven repositories.
+ **/
+ext.deps = [:]
+
+def versions = [:]
+
+versions.android_gradle_plugin = "3.0.1"
+versions.kotlin = "1.1.51"
+versions.support = "27.0.2"
+versions.multidex = "1.0.2"
+
+versions.constraint_layout = "1.0.2"
+versions.butterknife = "8.4.0"
+versions.glide = "3.8.0"
+
+versions.rxjava2 = "2.1.0"
+versions.rxandroid = "2.0.1"
+versions.rxrelay = "2.0.0"
+versions.rxbus2 = "1.1.1"
+
+versions.okgo = "3.0.4"
+versions.okrx2 = "2.0.2"
+versions.readystatesoftware = "1.0.4"
+versions.dbflow = "4.2.4"
+versions.photo_view = "2.0.0"
+versions.compressor = "2.1.0"
+versions.gson = "2.8.0"
+versions.flow_layout = "1.1.2"
+versions.permission = "2.0.0-rc5"
+versions.utils = "1.10.0"
+versions.toasty = "1.1.3"
+versions.material_dialog = "0.9.6.0"
+versions.base_recyclerview_adapterhelper = "2.9.30"
+//Arouter
+versions.arouter_compiler = "1.1.4"
+versions.arouter_api = "1.3.1"
+
+
+
+def deps = [:]
+
+def support = [:]
+support.annotations = "com.android.support:support-annotations:$versions.support"
+support.app_compat = "com.android.support:appcompat-v7:$versions.support"
+support.v13 = "com.android.support:support-v13:$versions.support"
+support.percent = "com.android.support:percent:$versions.support"
+support.recyclerview = "com.android.support:recyclerview-v7:$versions.support"
+support.cardview = "com.android.support:cardview-v7:$versions.support"
+support.design = "com.android.support:design:$versions.support"
+support.v4 = "com.android.support:support-v4:$versions.support"
+support.core_utils = "com.android.support:support-core-utils:$versions.support"
+support.multidex = "com.android.support:multidex:$versions.multidex"
+deps.support = support
+
+def kotlin = [:]
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin"
+kotlin.test = "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin"
+kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+deps.kotlin = kotlin
+
+def okgo = [:]
+okgo.runtime = "com.lzy.net:okgo:$versions.okgo"
+okgo.okrx2 = "com.lzy.net:okrx2:$versions.okrx2"
+okgo.readystatesoftware = "com.readystatesoftware.chuck:library:$versions.readystatesoftware"
+deps.okgo = okgo
+
+def rxjava2 = [:]
+rxjava2.runtime = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
+rxjava2.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+rxjava2.rxrelay = "com.jakewharton.rxrelay2:rxrelay:$versions.rxrelay"
+rxjava2.rxbus2 = "com.github.wind0ws:rxbus2:$versions.rxbus2"
+deps.rxjava2 = rxjava2
+
+
+def dbflow = [:]
+dbflow.runtime = "com.github.Raizlabs.DBFlow:dbflow:$versions.dbflow"
+dbflow.core = "com.github.Raizlabs.DBFlow:dbflow-core:$versions.dbflow"
+dbflow.processor = "com.github.Raizlabs.DBFlow:dbflow-processor:$versions.dbflow"
+dbflow.rx2 = "com.github.Raizlabs.DBFlow:dbflow-rx2:$versions.dbflow"
+deps.dbflow = dbflow
+
+def butterknife = [:]
+butterknife.runtime = "com.jakewharton:butterknife:$versions.butterknife"
+butterknife.compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife"
+butterknife.plugin = "com.jakewharton:butterknife-gradle-plugin:$versions.butterknife"
+deps.butterknife = butterknife
+
+//腾讯 Bugly 应用升级sdk
+def bugly = [:]
+bugly.crashreport = 'com.tencent.bugly:crashreport_upgrade:latest.release'
+bugly.tinker_android = 'com.tencent.tinker:tinker-android-lib:1.9.6'
+bugly.nativecrashreport = 'com.tencent.bugly:nativecrashreport:latest.release'
+deps.bugly = bugly
+
+//other
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+//view
+deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
+//流式布局
+deps.flow_layout = "com.hyman:flowlayout-lib:$versions.flow_layout"
+//TabLayout布局
+deps.flyco_tab_layout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar"
+//图片缩放
+deps.photo_view = "com.github.chrisbanes:PhotoView:$versions.photo_view"
+//Alert窗口
+deps.material_dialog = "com.afollestad.material-dialogs:core:$versions.material_dialog"
+//页面侧滑
+deps.slidableactivity = 'com.r0adkll:slidableactivity:2.0.5'
+//页面数据抓取
+deps.jsoup =  'org.jsoup:jsoup:1.11.2'
+//RecyclerAdapter框架
+deps.base_recyclerview_adapterhelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.base_recyclerview_adapterhelper"
+//gson
+deps.gson = "com.google.code.gson:gson:$versions.gson"
+//图片加载
+deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
+//权限申请
+deps.permission = "com.yanzhenjie:permission:$versions.permission"
+//工具
+deps.utils = "com.blankj:utilcode:$versions.utils"
+deps.toasty =  "com.github.GrenderG:Toasty:$versions.toasty"
+//图片压缩
+deps.compressor =  "id.zelory:compressor:$versions.compressor"
+
+//阿里页面路由ARouter
+deps.arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
+deps.arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"
+
+
+
+ext.deps = deps
+
+def build_versions = [:]
+build_versions.version_code = 1
+build_versions.version_name = '1.0.0.1'
+build_versions.min_sdk = 19
+build_versions.target_sdk = 26
+build_versions.build_tools = "27.0.2"
+ext.build_versions = build_versions
+
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.mavenCentral()
+    //Add the JitPack repository
+    handler.maven { url "https://jitpack.io" }
+    handler.maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+}
+
+ext.addRepos = this.&addRepos

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CommonFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_l"
+        android:paddingBottom="@dimen/spacing_l"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/fillStatusBarView"
+            style="@style/fitsystem"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tab_im"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/im_tab_height"
+            android:paddingLeft="@dimen/im_tab_height"
+            android:paddingRight="@dimen/im_tab_height"
+            android:layout_gravity="center_horizontal"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="?colorAccent"
+            app:tl_bar_color="@color/white"
+            app:tl_tab_padding="@dimen/spacing_l"
+            app:tl_indicator_margin_bottom="@dimen/spacing_s"
+            app:tl_indicator_margin_left="@dimen/spacing_s"
+            app:tl_indicator_margin_right="@dimen/spacing_s"
+            app:tl_indicator_margin_top="@dimen/spacing_s"
+            app:tl_textBold="BOTH"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_im"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/windowBackg"/>
+</LinearLayout>

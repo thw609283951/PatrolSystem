@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CommonActivity">
+	<include layout="@layout/view_include_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+		android:layout_weight="1">
+		<com.baidu.mapapi.map.MapView
+			android:id="@+id/mapview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:padding="@dimen/spacing_l"
+			android:background="@color/translucent"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/tv_lng"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:singleLine="true"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_size_h"/>
+			<TextView
+				android:id="@+id/tv_lat"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:singleLine="true"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_size_h"/>
+		</LinearLayout>
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_marker_location" />
+         <ImageButton
+             android:id="@+id/ib_again_location"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:background="@color/transparent"
+             android:layout_margin="@dimen/spacing_h"
+             android:src="@mipmap/ic_again_location" />
+
+    </RelativeLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_poi"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/list_height"
+		android:padding="@dimen/spacing_m"
+		android:background="@color/white"
+		android:visibility="gone"
+		android:layout_alignParentRight="true"/>
+</LinearLayout>

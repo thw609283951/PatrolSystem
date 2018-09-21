@@ -1,0 +1,89 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName(), targetModuleName: "Common"]
+            }
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            zipAlignEnabled false
+            shrinkResources false
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    // Support libraries
+    api deps.support.app_compat
+    api deps.support.v4
+    api deps.support.v13
+    api deps.support.design
+    api deps.support.cardview
+    api deps.support.percent
+    api deps.support.recyclerview
+    api deps.support.multidex
+    api deps.constraint_layout
+    api deps.kotlin.stdlib
+    // RxJava and okgo
+    api deps.rxjava2.runtime
+    api deps.rxjava2.rxandroid
+    api deps.rxjava2.rxrelay
+    api deps.rxjava2.rxbus2
+    api deps.okgo.runtime
+    api deps.okgo.okrx2
+    //db
+    api deps.dbflow.core
+    api deps.dbflow.runtime
+    api deps.dbflow.rx2
+    // other
+    api deps.butterknife.runtime
+    api deps.flyco_tab_layout
+    api deps.flow_layout
+    api deps.gson
+    api deps.permission
+    api deps.utils
+    api deps.glide
+    api deps.compressor
+    api deps.slidableactivity
+    api deps.base_recyclerview_adapterhelper
+    //view
+    api deps.photo_view
+    api deps.material_dialog
+    api deps.toasty
+    //router
+    api deps.arouter_api
+    compileOnly 'javax.annotation:javax.annotation-api:1.2'
+    //bugly
+    api deps.bugly.crashreport
+    api deps.bugly.nativecrashreport
+    api deps.bugly.tinker_android
+
+    //annotationProcessor
+    annotationProcessor deps.dbflow.processor
+    annotationProcessor deps.butterknife.compiler
+    implementation project(':lib_mvp')
+}

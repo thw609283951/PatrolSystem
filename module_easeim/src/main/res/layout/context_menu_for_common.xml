@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/spacing_h"
+    android:layout_marginRight="@dimen/spacing_h"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/ContextMenuItem"
+        android:onClick="delete"
+        android:text="@string/delete_message" />
+    <View style="@style/CommonLine"/>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+
+		<title></title>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+		</script>
+		
+	</head>
+
+	<body>
+		<div class="container" id="warp">
+
+			<div class="nav">
+				<div class="nav_width">
+					<div class="nav_bd">
+						<div class="nav_title">工地总数</div>
+						<div class="nav_count" id="count"></div>
+					</div>
+				</div>
+				<div class="nav_width">
+					<div class="nav_bd">
+						<div class="nav_title">今日巡查工地数</div>
+						<div class="nav_count green" id="tdCount"></div>
+					</div>
+				</div>
+				<div class="nav_width">
+					<div>
+						<div class="nav_title">昨日巡查工地数</div>
+						<div class="nav_count red" id="yesCount"></div>
+					</div>
+				</div>
+				<div class="cl"></div>
+
+			</div>
+
+			<div class="nav">
+				<div class="nav_al">
+					<span class="nav_t"></span>
+					<span>今日</span>
+					<span class="nav_y"></span>
+					<span>昨日</span>
+				</div>
+				<div id="mian3"></div>
+				<div id="mian3_"></div>
+				<div class="cl"></div>
+			</div>
+
+			<div class="nav">
+				<div class="all_c">全区巡查工地状态</div>
+				<!--<div id="mian4"></div>-->
+				<div class="nav_al">
+					<span class="nav_y"></span>
+					<span>已巡查</span>
+					<span class="nav_no"></span>
+					<span>未巡查</span>
+				</div>
+				<div id="works">
+				</div>
+			</div>
+
+		</div>
+		
+		<div id="wsUser" style="display: none;">
+			<div class="backContainer"><img src="img/back.png"/><div class="fl">返回</div> 巡查名单</div>
+			<div class="p_river_top">
+				<div class="p_river_tod p_river_active" id="ts_">今日巡查</div>
+				<div class="p_river_tod " id="ys_">昨日巡查</div>
+				<div class="cl"></div>
+			</div>
+			<div class="p_block"></div>
+			<div id="wsList">
+				<div class="p_person_list">
+					<div class="p_person_top">
+						<div class="p_person_job">
+							<img src="img/person.png" /> 区河长：林道平
+						</div>
+						<div class="no_patrol">未巡查</div>
+						<div class="cl"></div>
+					</div>
+					
+					<div class="p_person_post p_person_bt">
+						<div class="p_person_field">
+							职务
+						</div>
+						<div class="p_fr">书记</div>
+						<div class="cl"></div>
+					</div>
+					<div class="p_person_post">
+						<div class="p_person_field">
+							电话
+						</div>
+						<div class="p_fr phone"><img src="img/phone.png" />12316546165</div>
+						<div class="cl"></div>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
+		
+
+	</body>
+
+</html>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/initChart.js" type="text/javascript" charset="utf-8"></script>

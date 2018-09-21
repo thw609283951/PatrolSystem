@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CommonItemLine">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_status_green"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/spacing_l"
+                android:lines="1"
+                android:ellipsize="end"
+                style="@style/CommonBoldText"/>
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/CommonTag"/>
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_marginLeft="@dimen/spacing_l"
+                style="@style/CommonTag"/>
+        </LinearLayout>
+
+        <View style="@style/CommonLine"
+            android:layout_marginTop="@dimen/spacing_l"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="@dimen/spacing_xxh"
+                android:layout_height="@dimen/spacing_xxh"
+                android:layout_marginLeft="@dimen/spacing_l">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_patrol_event"/>
+                <TextView
+                    android:id="@+id/tv_count"
+                    style="@style/UnReadCountText" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_l"
+                android:lines="3"
+                android:ellipsize="end"
+                style="@style/CommonText"/>
+            <View style="@style/CommonLine"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/textLightColor"/>
+        </LinearLayout>
+</android.support.v7.widget.CardView>

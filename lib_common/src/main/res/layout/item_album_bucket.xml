@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/spacing_m">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/album_img_size"
+        android:layout_height="@dimen/album_img_size"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_default_image" />
+
+    <TextView
+       android:id="@+id/tv_dir_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="@dimen/spacing_m"
+       android:layout_weight="1"
+        style="@style/CommonText"
+        tool:text="DIR NAME"/>
+
+     <TextView
+       android:id="@+id/tv_count"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/CommonText"
+       tool:text="10"/>
+	
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/spacing_m"
+         android:background="@color/transparent"
+         app:srcCompat="@drawable/ic_arrow_right_24dp"/>
+</LinearLayout>

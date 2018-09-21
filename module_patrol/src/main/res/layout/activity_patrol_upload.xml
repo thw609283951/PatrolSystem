@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.supersit.common.widget.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/view_root"
+    style="@style/CommonActivity">
+    <include layout="@layout/view_include_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/CommonPadding_tbm_lrh"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonText"
+                android:text="@string/belong_project"/>
+
+            <com.supersit.common.widget.edittext.AutoCheckEditText
+                android:id="@+id/et_belong_project"
+                android:layout_marginTop="@dimen/spacing_l"
+                style="@style/CommonEditText"
+                android:enabled="false"
+                android:hint="@string/select_event_type"/>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_belong_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_l"
+                app:max_select="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommonText"
+                android:text="@string/event_type"/>
+
+            <com.supersit.common.widget.edittext.AutoCheckEditText
+                android:id="@+id/et_event_type"
+                android:layout_marginTop="@dimen/spacing_l"
+                style="@style/CommonEditText"
+                android:enabled="false"
+                android:hint="@string/select_event_type"/>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_event_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_l"
+                app:max_select="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                style="@style/CommonText"
+                android:text="@string/event_title"/>
+
+            <com.supersit.common.widget.edittext.AutoCheckEditText
+                android:id="@+id/et_event_title"
+                android:layout_marginTop="@dimen/spacing_l"
+                style="@style/CommonEditText"
+                android:hint="@string/select_event_type"/>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_l"
+                app:max_select="1"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/CommonText"
+                    android:text="@string/event_remark"/>
+                <CheckBox
+                    android:id="@+id/cb_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    style="@style/CommonText"
+                    android:text="@string/everything_normal"/>
+            </LinearLayout>
+
+            <com.supersit.common.widget.edittext.AutoCheckEditText
+                android:id="@+id/et_event_remark"
+                android:layout_marginTop="@dimen/spacing_l"
+                style="@style/CommonEditText"
+                android:hint="@string/input_event_remark"
+                android:lines="3"
+                android:lineSpacingMultiplier="1.1"
+                android:gravity="left|top"
+                android:padding="@dimen/spacing_m"/>
+            <TextView
+                android:id="@+id/tv_text_count_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="@dimen/text_size_m"
+                android:textColor="@color/textLightColor"
+                android:text="0/200"
+                android:maxLength="200"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                style="@style/CommonText"
+                android:text="@string/commit_object"/>
+
+            <com.supersit.common.widget.edittext.AutoCheckEditText
+                android:id="@+id/et_commit_object"
+                android:layout_marginTop="@dimen/spacing_l"
+                style="@style/CommonEditText"
+                android:focusable="false"
+                android:hint="@string/select_commit_object"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/CommonText"
+                    android:text="@string/current_location"/>
+
+                <TextView
+                    android:id="@+id/tv_refresh_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refresh_location"
+                    android:textSize="@dimen/text_size_m"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/btn_click_transparent_bg"/>
+            </LinearLayout>
+            <com.supersit.common.widget.edittext.AutoCheckEditText
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_m"
+                android:lines="1"
+                android:ellipsize="end"
+                android:enabled="false"
+                style="@style/CommonEditText"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_camera_24dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_photo_or_vedio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/spacing_l"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackg"
+        style="@style/CommonPadding_tbm_lrh">
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/CommonButton"
+            android:text="@string/upload"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/spacing_m"
+            style="@style/CommonButton"
+            android:text="@string/save"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/spacing_m"
+            style="@style/CommonRedButton"
+            android:visibility="gone"
+            android:text="@string/delete"/>
+    </LinearLayout>
+</com.supersit.common.widget.MyLinearLayout>

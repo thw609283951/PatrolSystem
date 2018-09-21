@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#f7752a</color>
+    <!-- 灰色 -->
+    <color name="grey">#a1a1a1</color>
+    <color name="greyLight">#f0f0f0</color>
+    <!-- 蓝色 -->
+    <color name="blueLight">#8bd0ff</color>
+    <color name="blueLight_transparent">#f08bd0ff</color>
+    <color name="blue">#1e9df4</color>
+    <color name="blueDark">#1398f4</color>
+
+    <!--页面背景色-->
+    <color name="windowBackg">#feffff</color>
+    <color name="windowBackgDark">#efefef</color>
+    <color name="textColor">#48495f</color>
+    <color name="textLightColor">#969699</color>
+    <color name="dividerColor">#bebebe</color>
+    <color name="fragmentBackg">#ededed</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white_transparent">#f0ffffff</color>
+
+    <color name="translucent">#20000000</color>
+
+
+    <!--状态栏颜色-->
+    <color name="colorPrimaryDark">@color/blueDark</color>
+    <!--Appbar背景色-->
+    <color name="colorPrimary">@color/blue</color>
+
+    <!--底部导航栏颜色-->
+    <color name="navigationColor">#353435</color>
+    <!--ToolBar上的Title颜色-->
+    <color name="textColorPrimary">@color/white</color>
+    <!--各个控制控件的默认颜色-->
+    <color name="colorControlNormal">@color/grey</color>
+    <!--控制各个控件被选中时的颜色-->
+    <color name="colorAccent">#1e9df4</color>
+    <!-- 正在加载页文字颜色 -->
+    <color name="loadingTextColor">@color/grey</color>
+    <!-- view之间的分割线 -->
+    <color name="divider">@color/dividerColor</color>
+    <!-- MaterialDialog title颜色 -->
+    <color name="materialDialogTitle">@color/blueDark</color>
+    <!-- Button 按下的背景色-->
+    <color name="buttonPressed">@color/greyLight</color>
+
+    <color name="pageWindowBackg">#fdfdfd</color>
+
+
+</resources>

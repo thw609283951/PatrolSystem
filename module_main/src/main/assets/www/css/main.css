@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "微软雅黑"
+}
+
+.container {
+	padding: 15px
+}
+
+.nav {
+	border: solid 1px #ebe9e9;
+	border-radius: 1px;
+	margin-bottom: 15px
+}
+
+.nav_width {
+	float: left;
+	width: 33%
+}
+
+.cl {
+	clear: both
+}
+
+.nav_bd {
+	border-right: dashed 1px dodgerblue
+}
+
+.nav_title {
+	line-height: 25px;
+	color: gray;
+	text-align: center
+}
+
+.nav_count {
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center
+}
+
+.green {
+	color: green
+}
+
+.red {
+	color: red
+}
+
+.chart_container {}
+
+.nav_al {
+	text-align: center;
+	line-height: 35px
+}
+
+.nav_t {
+	height: 10px;
+	width: 25px;
+	border-radius: 3px;
+	display: inline-block;
+	background: #87CEFA
+}
+.nav_no {
+	height: 10px;
+	width: 25px;
+	border-radius: 3px;
+	display: inline-block;
+	background: #d8dad6
+}
+
+
+.nav_y {
+	height: 10px;
+	width: 25px;
+	border-radius: 3px;
+	display: inline-block;
+	background: #458B00;
+	margin-left: 10px
+}
+
+.all_c {
+	text-align: center;
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 14px
+}
+
+#mian3 {
+	height: 120px;
+	width: 50%;
+	float: left
+}
+
+#mian3_ {
+	height: 120px;
+	width: 50%;
+	float: left
+}
+
+#mian4 {
+	height: 500px;
+	width: 100%
+}
+
+.p_river_top {
+	height: 50px;
+	background: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px
+}
+
+.p_river_tod {
+	float: left;
+	width: 50%;
+	font-size: 16px
+}
+
+.p_river_active {
+	color: cornflowerblue;
+	border-bottom: solid 1px cornflowerblue;
+}
+
+.p_block {
+	height: 35px;
+	background: #efefef;
+}
+.fl{
+	float: left;
+}
+.backContainer{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	background: #efefef;
+}
+.backContainer img{
+	padding-right: 5px;
+	height: 25px;
+	width: 25px;
+	position: absolute;left: 10px;top: 5px;
+}
+.backContainer div{position: absolute;left: 35px;
+	color: cornflowerblue;font-size: 14px;
+}
+.p_person_list {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px cornflowerblue
+}
+
+.p_person_top {
+	padding: 0 15px;
+	line-height: 30px
+}
+
+.p_person_job {
+	font-weight: bold;
+	color: cornflowerblue;
+	font-size: 16px;
+	float: left
+}
+
+.p_person_job img {
+	height: 25px;
+	width: 25px;
+	vertical-align: middle
+}
+
+.no_patrol {
+	float: right;
+	font-size: 16px;
+	color: red
+}
+
+.is_patrol {
+	float: right;
+	font-size: 16px;
+	color: green
+}
+
+.p_person_post {
+	margin: 0 15px 0 50px;
+	line-height: 40px
+}
+
+.p_person_bt {
+	border-bottom: solid 1px #efefef
+}
+
+.p_person_field {
+	font-weight: bold;
+	font-size: 16px;
+	float: left;
+	color: #6d6868
+}
+
+.p_fr {
+	float: right;
+	font-size: 16px
+}
+
+.p_fr img {
+	height: 25px;
+	width: 25px;
+	vertical-align: middle;
+	margin-right: 8px
+}
+
+.phone {
+	color: cornflowerblue
+}
+.gdname{
+	border-bottom: solid #d8dad6 1px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.status{
+	margin-bottom: 8px;margin-top: 5px;
+}
+.st-b{
+	margin-bottom: 8px;
+}
+.t-type{
+	display: inline-block;width:20%;height: 20px;line-height: 20px;text-align: center;
+}
+.typeFull{
+	display: inline-block;width: 80%;height: 20px; text-align: center;
+}
+.is{
+	background: #458B00;
+}
+.no{
+	background: #d8dad6;
+}
+.p_zy {
+	height: 35px;
+	background: #efefef;
+	height: 10px;margin-top: 10px;
+}

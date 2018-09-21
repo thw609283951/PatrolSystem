@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="im_tabs">
+        <item>@string/session</item>
+        <item>@string/address_book</item>
+        <item>@string/group</item>
+    </array>
+</resources>

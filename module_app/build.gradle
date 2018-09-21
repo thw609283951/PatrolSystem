@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+// 依赖插件脚本
+//apply from: 'tinker-support.gradle'
+
+static def buildTime() {
+    return new Date().format("yyyyMMdd");
+}
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    defaultConfig {
+        applicationId "com.supersit.patrolsystemas"
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode build_versions.version_code
+        versionName build_versions.version_name
+        multiDexEnabled true
+        //打包时间
+        resValue "string", "build_time", buildTime()
+
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        releaseSigning {
+            try{
+                storeFile file('../key/patrol_fk.jks')
+                storePassword '123456'
+                keyAlias 'fk'
+                keyPassword '123456'
+            }catch (ex){
+                throw new InvalidUserDataException(ex.toString())
+            }
+        }
+    }
+
+    buildTypes {
+
+        release {
+            //更改AndroidManifest.xml中预先定义好占位符信息
+            //manifestPlaceholders = [app_icon: "@drawable/icon"]
+            // 不显示Log
+            buildConfigField "boolean", "LEO_DEBUG", "false"
+            //是否zip对齐
+            zipAlignEnabled true
+            // 缩减resource文件
+            shrinkResources true
+            //Proguard
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.releaseSigning
+        }
+
+        debug {
+            //给applicationId添加后缀“.debug”
+            applicationIdSuffix ".debug"
+            //manifestPlaceholders = [app_icon: "@drawable/launch_beta"]
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            zipAlignEnabled false
+            shrinkResources false
+            minifyEnabled false
+            debuggable true
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':lib_common')
+    annotationProcessor deps.butterknife.compiler
+    if (isNeedEaseIMModule.toBoolean()) {
+        implementation project(':module_easeim')
+    }
+    if (isNeedMainModule.toBoolean()) {
+        implementation project(':module_main')
+    }
+    if (isNeedPatrolModule.toBoolean()) {
+        implementation project(':module_patrol')
+    }
+    if(isNeedWorkModule.toBoolean()){
+        implementation project(':module_work')
+    }
+}

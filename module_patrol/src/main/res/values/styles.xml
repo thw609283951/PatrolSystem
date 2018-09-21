@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PatrolTableItem" parent="CommonSmallText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/spacing_l</item>
+        <item name="android:paddingBottom">@dimen/spacing_l</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TableVerticalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:divider">@drawable/table_v_divider</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="TableHorizontallDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:divider">@drawable/table_h_divider</item>
+        <item name="android:showDividers">middle|end</item>
+    </style>
+
+
+
+</resources>

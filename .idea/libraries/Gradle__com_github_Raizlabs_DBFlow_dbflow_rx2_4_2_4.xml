@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Raizlabs.DBFlow:dbflow-rx2-4.2.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dbflow-rx2-4.2.4.aar/79daf8692635493e86d470f69402234e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dbflow-rx2-4.2.4.aar/79daf8692635493e86d470f69402234e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-rx2/4.2.4/a0554c2d0d54dbd791ee156ae4ef8aa33fe92d50/dbflow-rx2-4.2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

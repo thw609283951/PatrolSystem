@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CommonFragment">
+    <include layout="@layout/view_weather_header_home"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_m"
+        android:background="@color/white"
+        android:stretchColumns="0,1,2,3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_l"
+            style="@style/WorkTitleText"
+            android:drawableLeft="@mipmap/ic_event_handle"
+            android:text="@string/event_handle"/>
+        <View style="@style/CommonLine" android:layout_marginTop="@dimen/spacing_l"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/btn_wait_accept"
+                    style="@style/FrameTabItem"
+                    android:text="@string/wait_accept" />
+                <TextView
+                    android:id="@+id/tv_wait_accept_unread_count"
+                    style="@style/UnReadCountText" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/btn_processing"
+                    style="@style/FrameTabItem"
+                    android:text="@string/processing" />
+                <TextView
+                    android:id="@+id/tv_processing_unread_count"
+                    style="@style/UnReadCountText" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btn_processed"
+                style="@style/FrameTabItem"
+                android:text="@string/processed" />
+            <TextView
+                android:id="@+id/btn_submited"
+                style="@style/FrameTabItem"
+                android:text="@string/submited" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:padding="@dimen/spacing_m"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_l"
+            style="@style/WorkTitleText"
+            android:drawableLeft="@mipmap/ic_applications"
+            android:text="@string/applications"/>
+        <View style="@style/CommonLine" android:layout_marginTop="@dimen/spacing_l"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_applications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:padding="@dimen/spacing_m"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_l"
+            style="@style/WorkTitleText"
+            android:drawableLeft="@mipmap/ic_patrol_dynamic"
+            android:text="@string/patrol_dynamic"/>
+        <View style="@style/CommonLine" android:layout_marginTop="@dimen/spacing_l"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_patrol_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"/>
+    </LinearLayout>
+
+
+</LinearLayout>
